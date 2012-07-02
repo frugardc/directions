@@ -13,15 +13,11 @@ Thanks to George Lantz for the code to decode the google polylines into coordina
 
 Add this line to your application's Gemfile:
 
-    gem 'directions'
+    gem 'directions', :git => "git://github.com/frugardc/directions.git"
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install directions
 
 ## Usage
 
