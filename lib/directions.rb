@@ -35,6 +35,12 @@ module Directions
 		def end_address
 			legs.first.end_address
 		end
+		def start_location
+			legs.first.start_location
+		end
+		def end_location
+			legs.first.end_location
+		end		
 		def distance
 			legs.first.distance
 		end
