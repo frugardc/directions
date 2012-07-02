@@ -1,10 +1,10 @@
 require 'rubygems'
-require File.expand_path(File.join(File.dirname(__FILE__), "gdirections", "version"))
+require File.expand_path(File.join(File.dirname(__FILE__), "directions", "version"))
 require File.expand_path(File.join(File.dirname(__FILE__), "polyline_decoder"))
 require File.expand_path(File.join(File.dirname(__FILE__), "extensions", "hash"))
 require 'faraday'
 require 'json'
-module Gdirections
+module Directions
 	class Router
 		def self.directions(options = {})
 			options[:sensor] ||= false

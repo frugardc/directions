@@ -1,4 +1,4 @@
-# Gdirections
+# Directions
 
 Wraps the Google Directions API, takes the returned hash and gives it dot notation like behavior.  For simplicity, assuming the 
 directions return one route and one leg, as I have yet to see it return more.
@@ -13,7 +13,7 @@ Thanks to George Lantz for the code to decode the google polylines into coordina
 
 Add this line to your application's Gemfile:
 
-    gem 'gdirections'
+    gem 'directions'
 
 And then execute:
 
@@ -21,12 +21,12 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install gdirections
+    $ gem install directions
 
 ## Usage
 
 
-	irb(main):002:0> directions = Gdirections::Router.directions(:origin => "111 8th Ave, NYC", :destination => "55 Broad St, NYC",:mode => "walking")
+	irb(main):002:0> directions = Directions::Router.directions(:origin => "111 8th Ave, NYC", :destination => "55 Broad St, NYC",:mode => "walking")
 
 	irb(main):004:0> directions.start_address
 	=> "111 8th Ave, New York, NY 10011, USA"
