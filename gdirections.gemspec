@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["frugardc@gmail.com"]
   gem.description   = %q{Gem for Google Directions API}
   gem.summary       = %q{Wraps the Google Directions api.  Adds some methods to easily return results, as well as dot notation access to the results hash}
-  gem.homepage      = ""
+  gem.homepage      = "http://github.com/frugardc/gdirections"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
