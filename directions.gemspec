@@ -14,7 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "directions"
   gem.require_paths = ["lib"]
   gem.version       = Directions::VERSION
-  gem.add_dependency "system_timer"
   gem.add_dependency "faraday"
   gem.add_dependency "json"
 end
