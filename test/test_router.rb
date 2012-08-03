@@ -12,4 +12,9 @@ class TestDirections < Test::Unit::TestCase
   def test_router_returns_result
     assert_equal Directions::Router.directions(:origin => "111 8th Ave, New York, NY", :destination => "55 Broad St, 10004").class, Directions::Result
   end
+
+  def test_router_coordinate_path
+    assert_equal Directions::Router.directions(:origin => "111 8th Ave, New York, NY", :destination => "55 Broad St, 10004").coordinate_path.class, Array
+  end
+
 end

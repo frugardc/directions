@@ -32,7 +32,7 @@ class PolylineDecoder
         shift = 0
         result = 0
         loop do
-          a = encoded[index]
+          a = encoded[index].ord
           b = a - 63
           result |= (b & 0x1f) << shift
           shift += 5
