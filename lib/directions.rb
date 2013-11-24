@@ -29,7 +29,9 @@ module Directions
 			end
 		end
 		def coordinate_path
-			PolylineDecoder.decode(overview_polyline.points)
+			if overview_polyline
+				PolylineDecoder.decode(overview_polyline.points)
+			end
 		end
 		def start_address
 			legs.first.start_address
