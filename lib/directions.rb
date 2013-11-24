@@ -24,7 +24,9 @@ module Directions
 			@attributes = params.routes.first
 		end
 		def method_missing(meth)
-			@attributes.send(meth)
+			if @attributes
+				@attributes.send(meth)
+			end
 		end
 		def coordinate_path
 			PolylineDecoder.decode(overview_polyline.points)
